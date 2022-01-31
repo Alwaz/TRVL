@@ -1,0 +1,83 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero__container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+}
+
+.hero__container > h1 {
+  color: #fff;
+  font-size: 6em;
+  margin-top: 5%;
+}
+
+.hero__container > p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 8px;
+}
+
+.hero__btn {
+  display: flex;
+  width: 29%;
+  margin-top: 2%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+  .hero__container > h1 {
+    font-size: 4.375rem;
+    margin-top: 10%;
+  }
+
+  .hero__btn {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container > h1 {
+    font-size: 4.125rem;
+    margin-top: 20%;
+  }
+
+  .hero__container > p {
+    font-size: 1.875rem;
+  }
+
+  .hero__btn {
+    width: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__container > h1 {
+    text-align: center;
+    font-size: 3.125rem;
+  }
+
+  .hero__container > p {
+    font-size: 1.25rem;
+  }
+
+  .hero__btn {
+    height: 25%;
+    width: 100%;
+  }
+}
