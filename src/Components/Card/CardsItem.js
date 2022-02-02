@@ -6,7 +6,7 @@ const CardsItem = ({ src, text, label, path }) => {
     <>
       <li className="cards__item">
         <Link to={path} className="cards__item__link">
-          <figure className="cards__item__pic-wrap" data-catagory={label}>
+          <figure className="cards__item__pic-wrap" data-category={label}>
             <img src={src} alt="Travel Image" className="cards__item__img" />
           </figure>
 
